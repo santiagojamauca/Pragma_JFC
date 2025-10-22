@@ -1,0 +1,10 @@
+variable "name" { type = string }
+variable "vpc_id" { type = string }
+variable "private_subnet_ids" { type = list(string) }
+variable "lambda_code_bucket" { type = string }
+variable "lambda_code_key" { type = string }
+variable "lambda_runtime" { type = string }
+variable "lambda_handler" { type = string }
+variable "rds_secret_arn" { type = string }
+variable "rds_security_group_id" { type = string }
+variable "tags" { type = map(string) }

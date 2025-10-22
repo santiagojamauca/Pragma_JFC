@@ -1,0 +1,11 @@
+variable "name" { type = string }
+variable "vpc_id" { type = string }
+variable "private_subnet_ids" { type = list(string) }
+variable "engine" { type = string }
+variable "engine_version" { type = string }
+variable "db_name" { type = string }
+variable "username" { type = string }
+variable "min_capacity" { type = number }
+variable "max_capacity" { type = number }
+variable "lambda_sg_id" { type = string }
+variable "tags" { type = map(string) }
