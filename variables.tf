@@ -27,7 +27,7 @@ variable "domain_name" {
 
 variable "acm_certificate_arn" {
   type    = string
-  default = null # optional if create_acm = true
+  default = null # create_acm = true
 }
 
 variable "create_acm" {
@@ -37,12 +37,12 @@ variable "create_acm" {
 
 variable "hosted_zone_id" {
   type    = string
-  default = null # if you already know it
+  default = null 
 }
 
 variable "include_www" {
   type    = bool
-  default = false # also validate www.domain
+  default = false # validate www.domain
 }
 
 variable "lambda_code_bucket" {
@@ -65,7 +65,7 @@ variable "lambda_handler" {
 
 variable "db_engine" {
   type    = string
-  default = "aurora-postgresql" # or aurora-mysql
+  default = "aurora-postgresql"
 }
 
 variable "db_engine_version" {
@@ -105,5 +105,5 @@ variable "create_hosted_zone" {
 
 variable "domain_zone_name" {
   type    = string
-  default = null # apex, e.g. "example.com"
+  default = null 
 }
