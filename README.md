@@ -10,7 +10,7 @@ Este proyecto implementa una arquitectura **Serverless y modular** en **AWS** us
 
 ## Cumplimiento de Requisitos Mínimos
 
-### **1. Diseño de Arquitectura (Obligatorio)**
+### **1. Diseño de Arquitectura **
 
 Se diseñó una infraestructura completamente basada en **servicios administrados de AWS**, optimizada para alta disponibilidad y bajo costo.
 El flujo de tráfico sigue esta ruta:
